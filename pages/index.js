@@ -4,6 +4,7 @@ import { useAuth } from '../utils/context/authContext';
 
 function Home() {
   const { user } = useAuth();
+  console.warn('user id', user);
 
   return (
     <div
@@ -13,6 +14,7 @@ function Home() {
         padding: '30px',
         maxWidth: '400px',
         margin: '0 auto',
+        color: 'white',
       }}
     >
       <h1>Hello {user.displayName}! </h1>
